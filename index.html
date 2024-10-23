@@ -51,6 +51,29 @@
             width: 180px;
             height: auto;
         }
+        .education-images-container {
+            display: flex;
+            align-items: flex-start;
+        }
+        .education-images-container section {
+            flex: 1;
+        }
+        .images-container {
+            display: flex;
+            flex-direction: column;
+            margin-left: 20px;
+        }
+        .images-container img {
+            width: 250px; /* 根据需要调整宽度 */
+            margin-bottom: 100px; /* 使图片之间的间距更小 */
+            margin-right: 50px;
+            margin-top: 30px;
+        }
+        .course-list {
+            margin-left: 150px; /* 与日期的宽度保持一致，使得文字对齐 */
+            margin-top: 5px;
+            margin-bottom: 5px;
+        }
     </style>
 </head>
 <body>
@@ -90,14 +113,26 @@
         </div>
         <img src="pic/profile.jpg" alt="Wanhao Niu's Photo" style="width:400px;height:auto;">
     </section>
-    <section>
-        <h2>Education</h2>
-        <ul>
-            <li><strong class="date">2018.09 - 2022.07:</strong> <strong>Xi'an Jiao Tong University</strong> - Bachelor's degree in Mechanical Engineering (GPA: <strong>90.19</strong>, Rank: <strong>5/205</strong>)</li>
-            <li><strong class="date">2022.09 - 2025.06:</strong> <strong>Shanghai Jiao Tong University</strong> - Master's degree in Mechanical Engineering (GPA: <strong>3.72</strong>)</li>
-            <li><strong class="date">2024.04 - 2024.09:</strong> <strong>Tokyo Institute of Technology</strong> - YSEP Exchange Student (Research: Model-Free Object Grasping Technology Driven by Artificial Intelligence)</li>
-        </ul>
-    </section>
+    <div class="education-images-container">
+        <section>
+            <h2>Education</h2>
+            <ul>
+                <li><strong class="date">2018.09 - 2022.07:</strong> <strong>Xi'an Jiao Tong University - Bachelor's degree in Mechanical Engineering</strong> (GPA: <strong>90.19</strong>, Rank: <strong>5/205</strong>)</li>
+                <ul class="course-list">
+                    <li>Linear Algebra: 98; Advanced Mathematics: 91; Physics: 99; Machine Design: 93; Electrical engineering: 95; Thesis: A+</li>
+                </ul>
+                <li><strong class="date">2022.09 - 2025.06:</strong> <strong>Shanghai Jiao Tong University - Master's degree in Mechanical Engineering</strong> (GPA: <strong>3.72</strong>)</li>
+                <ul class="course-list">
+                    <li>Digital Signal Processing: A+; Matrix Theory: A-; Computer Graphics: A; Modern Control Theory: A-; Intelligent Control Technology: A</li>
+                </ul>
+                <li><strong class="date">2024.04 - 2024.09:</strong> <strong>Tokyo Institute of Technology - YSEP Exchange Student</strong> (Research: Model-Free Object Grasping Technology Driven by Artificial Intelligence)</li>
+            </ul>
+        </section>
+        <div class="images-container">
+            <!-- 在这里添加您的三张长条形图片 -->
+            <img src="images/Uni.png" alt="Image 1">
+        </div>
+    </div>
     <section>
         <h2>Languages</h2>
         <ul>
