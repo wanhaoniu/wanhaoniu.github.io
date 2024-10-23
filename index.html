@@ -26,6 +26,31 @@
             font-family: monospace;
             font-size: 16px;
         }
+        .document-thumbnails {
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap;
+            margin-top: 10px;
+            gap: 50px; /* 添加等距间隙 */
+        }
+        .document-thumbnail {
+            text-align: center;        /* 文字和图片居中对齐 */
+            width: 20%;                /* 每个缩略图占据容器的 23% 宽度 */
+            box-sizing: border-box;    /* 使 padding 和 border 计入总宽度 */
+        }
+        .document-thumbnail p {
+            text-align: flex;
+            font-size: 16px;
+            margin: 0; /* 移除默认的上下边距 */
+            padding-top: 2px; /* 如需微调，可添加上内边距 */
+        }
+        .document-thumbnail img {
+            border: 1px solid #ccc;
+            padding: 5px;
+            margin-bottom: 0;
+            width: 180px;
+            height: auto;
+        }
     </style>
 </head>
 <body>
@@ -33,18 +58,51 @@
         <div class="about-me-text">
             <h2>About Me</h2>
             <p>Hello, I'm Wanhao Niu, currently pursuing a Master's degree in Mechanical Engineering at Shanghai Jiao Tong University under the supervision of Prof. Chungang Zhuang, expected to graduate in June 2025. In 2024, I spent five months at Tokyo Institute of Technology under the guidance of Prof. Masaki Yamakita during an exchange program called YSEP. My research focuses on AI-driven model-free object grasping in unstructured environments, and I have extensive experience in robotic grasping and deep learning. I have received the National Scholarship and was recognized for my excellent undergraduate thesis (top 1%). Additionally, I serve as a reviewer for ICRA. I am planning to apply for a PhD program in 2025 to further advance my research in this field.</p>
-            <p>If you'd like to get in touch, please email me at <a href="mailto:nwh1093412390@sjtu.edu.cn">nwh1093412390@sjtu.edu.cn</a>.</p>
-            <p>Please find my resume <a href="CV Wanhao Niu.pdf">here</a>; my undergraduate transcript <a href="Undergraduate Transcript Wanhao Niu.pdf">here</a>; and my graduate transcript <a href="Graduate Transcript Wanhao Niu.pdf">here</a>.</p>
-            <p>You can also find a brief research proposal <a href="Research Proposal Wanhao Niu.pdf">here</a>, but it is only on the draft stage.</p>
+            <!-- <p>Please find my resume <a href="CV Wanhao Niu.pdf">here</a>; my undergraduate transcript <a href="Undergraduate Transcript Wanhao Niu.pdf">here</a>; and my graduate transcript <a href="Graduate Transcript Wanhao Niu.pdf">here</a>.</p> -->
+            <div class="document-thumbnails">
+                <div class="document-thumbnail">
+                    <a href="CV Wanhao Niu.pdf">
+                        <img src="images/cv_thumbnail.jpg" alt="CV" style="width:50px;height: 70px;">
+                        <p>Resume</p>
+                    </a>
+                </div>
+                <div class="document-thumbnail">
+                    <a href="Undergraduate Transcript Wanhao Niu.pdf">
+                        <img src="images/undergraduate_transcript_thumbnail.jpg" alt="Undergraduate Transcript" style="width:50px;height:70px;">
+                        <p>Undergraduate Transcript</p>
+                    </a>
+                </div>
+                <div class="document-thumbnail">
+                    <a href="Graduate Transcript Wanhao Niu.pdf">
+                        <img src="images/graduate_transcript_thumbnail.jpg" alt="Graduate Transcript" style="width:50px;height:70px;">
+                        <p>Graduate Transcript</p>
+                    </a>
+                </div>
+                <div class="document-thumbnail">
+                    <a href="Research Proposal Wanhao Niu.pdf">
+                        <img src="images/research_thumbnail.jpg" alt="Research Proposal" style="width:50px;height:70px;">
+                        <p>Research Proposal</p>
+                    </a>
+                </div>
+            </div>
+            <p>* The brief research proposal is only on the draft stage.</p>
+            <p>If you'd like to get in touch, please email me at <a href="mailto:nwh1093412390@sjtu.edu.cn">nwh1093412390@sjtu.edu.cn</a> or <a href="mailto:wandeneh@gmail.com">wandeneh@gmail.com</a>.</p>
         </div>
         <img src="pic/profile.jpg" alt="Wanhao Niu's Photo" style="width:400px;height:auto;">
     </section>
     <section>
         <h2>Education</h2>
         <ul>
-            <li><strong class="date">2018.09 - 2022.07:</strong> Xi'an Jiao Tong University - Bachelor's degree in Mechanical Engineering (GPA: 90.19, Rank: 5/205)</li>
-            <li><strong class="date">2022.09 - 2025.06:</strong> Shanghai Jiao Tong University - Master's degree in Mechanical Engineering (GPA: 3.72)</li>
-            <li><strong class="date">2024.04 - 2024.09:</strong> Tokyo Institute of Technology - YSEP Exchange Student (Research: Model-Free Object Grasping Technology Driven by Artificial Intelligence)</li>
+            <li><strong class="date">2018.09 - 2022.07:</strong> <strong>Xi'an Jiao Tong University</strong> - Bachelor's degree in Mechanical Engineering (GPA: <strong>90.19</strong>, Rank: <strong>5/205</strong>)</li>
+            <li><strong class="date">2022.09 - 2025.06:</strong> <strong>Shanghai Jiao Tong University</strong> - Master's degree in Mechanical Engineering (GPA: <strong>3.72</strong>)</li>
+            <li><strong class="date">2024.04 - 2024.09:</strong> <strong>Tokyo Institute of Technology</strong> - YSEP Exchange Student (Research: Model-Free Object Grasping Technology Driven by Artificial Intelligence)</li>
+        </ul>
+    </section>
+    <section>
+        <h2>Languages</h2>
+        <ul>
+            <li>Mandarin Chinese (Native)</li>
+            <li>English (Fluent - IELTS 6.5)</li>
         </ul>
     </section>
     <section>
@@ -118,13 +176,6 @@
             <li>Software: VSCode, MATLAB, AutoCAD, SolidWorks, COMSOL</li>
             <li>Programming Languages: Python (Proficient), MATLAB (Basic), C++ (Basic)</li>
             <li>Frameworks: PyTorch (Proficient), OpenCV (Proficient), PyBullet (Proficient), TensorFlow (Basic), Issac Lab (Basic)</li>
-        </ul>
-    </section>
-    <section>
-        <h2>Languages</h2>
-        <ul>
-            <li>Mandarin Chinese (Native)</li>
-            <li>English (Fluent - IELTS 6.5)</li>
         </ul>
     </section>
     <section>
